@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Background-Styling */
+.background{
+    background-image: url("../images/background-cover.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    /* Container-Box-Centralize-Property */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    filter:blur(10px);      /* Background-Blur-Property */
+
+}
+
+/* Container-Styling */
+.container{
+    background-color: white;
+    border: 0.5px solid rgb(238, 236, 236); 
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px grey;
+    width: 70%;
+    height: 510px;
+
+    /* Left/Right-Content-&-Card-Centralize-Property */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    position: absolute;
+}
+
+/* Left-Content-Styling */
+.left-content{
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    width: 300px;
+} 
+
+.left-content > p {
+    display: inline;
+}
+
+.text-bold{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 50px;
+    color: orange;
+}
+
+.text-light{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+}
+
+/* Right-Content-Styling */
+.right-content{
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    width: 250px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 0.8s;
+}
+
+.fas{
+    font-size: 35px;
+    color: orange;
+    margin-top: 5px;
+}
+
+.text-small{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    margin: 16px 0px 10px 10px;
+}
+
+.add-link{
+    text-decoration: none;
+    color: black;
+}
+
+/* Card-Styling */
+.card{
+    border: 3px solid orange;
+    height: 330px;
+    width: 240px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px grey;
+    transition: 0.5s;
+}
+
+.card-heading{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 28px;
+    color: orange;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.card > hr{
+    width: 50%;
+    margin: 0 58px;
+}
+
+.strike-off{
+    font-size: 23px;
+    margin: 30px 18px;
+    text-align: right;
+    text-decoration: line-through red;
+}
+
+.check-box{
+    margin: 0px 0px 0px 40px;
+}
+
+.text-unchecked{
+    display: inline;
+    text-align: right;
+    font-size: 23px;
+    margin: 30px 10px;
+    text-align: right;
+    padding: 0px 5px;
+}
+
+.card > a{
+    text-decoration: none;
+}
+
+/* PopUp-Box-Styling */
+.add-list-popup {
+    background-color: white;
+    border: 0.5px solid rgb(238, 236, 236); 
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px grey;
+    width: 30%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    z-index: 100;       /* Foreground-Property */
+}
+
+.add-list-popup > div{
+    z-index: 100;
+    text-align: center;
+}
+
+.container1 > p{
+    margin: 0px;
+}
+
+.add-list-size{
+    font-size: 35px;
+    font-weight: bold;
+    color: orange;
+}
+
+.container2 > input{
+    margin: 15px 0px;
+    padding: 0px 18px;
+    font-size: 20px;
+}
+
+.container3 > input{
+    margin: 10px;
+    padding: 10px 25px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+.container3 > input:hover{
+    transform: scale(1.1);
+}
+
+/* Back-Button-Styling */
+.back-button{
+    position: absolute;
+    top: 110%;
+    left: 43%;
+    font-size: 20px;
+}
+
+.fas{
+    font-size: 45px;
+}
+
+.back{
+    padding: 0px 10px;
+}
+
+.back:hover{
+    transform: scale(1.1);
+}
